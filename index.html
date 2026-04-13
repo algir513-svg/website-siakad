@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SIAKAD Mahasiswa</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <h1>Sistem Akademik Mahasiswa</h1>
+
+    <form method="POST">
+        <input type="text" name="nama" placeholder="Nama Lengkap" required>
+        <input type="text" name="nim" placeholder="NIM" required>
+        <input type="text" name="prodi" placeholder="Program Studi" required>
+        <textarea name="alamat" placeholder="Alamat" required></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+</body>
+</html>
